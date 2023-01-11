@@ -2,6 +2,6 @@ export interface Coordenada {
     id?:string,
     latitud:number,
     longitud:number,
-    fecha:Date
+    fecha:string
     hided?:boolean
 }

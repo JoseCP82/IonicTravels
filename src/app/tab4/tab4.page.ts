@@ -29,7 +29,7 @@ export class Tab4Page implements OnInit {
     let coordenada: Coordenada = {
       latitud: this.latitud,
       longitud: this.longitud,
-      fecha: this.fecha
+      fecha: this.fecha.toString()
     }
     try {
       await this.coordenadaS.addCoordenada(coordenada);

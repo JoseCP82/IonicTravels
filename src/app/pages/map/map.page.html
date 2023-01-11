@@ -5,12 +5,13 @@
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding" style="text-align: center;">
-    <span>Estoy aquí!!!</span><br>
-    <span>{{latitud}}</span><br>
-    <span>{{longitud}}</span>
+
+  <div class="container">
+    <capacitor-google-map #map></capacitor-google-map>
   </div>
+
   <div class="ion-padding">
     <ion-button expand="full" (click)="this.closeMapModal()">Volver</ion-button>
   </div>
+
 </ion-content>

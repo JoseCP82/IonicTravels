@@ -1,6 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { InfiniteScrollCustomEvent, ModalController } from '@ionic/angular';
 import { Coordenada } from '../model/coordenada';
+import { MapPage } from '../pages/map/map.page';
 import { CoordenadasService } from '../services/coordenadas.service';
 import { UiService } from '../services/ui.service';
 
@@ -35,26 +36,15 @@ export class Tab5Page implements OnInit {
   }
 
   public async showMap(coordenada:Coordenada){
-    /*
+    
     const modal = await this.modalCtrl.create({
-      component: EditPage,
-      componentProps:{data:note}
+      component: MapPage,
+      componentProps:{data:coordenada}
     });
     await modal.present();
 
     const { data, role } = await modal.onWillDismiss();
-    if(!role){
-      //actualizar
-      this.notes=this.notes.map((e)=>{
-        if(e.id==data.id){
-          return data;
-        }else{
-          return e;
-        }
-      })
-    }
-    console.log(data);
-    */
+    
   }
 
   public deleteCoordenada(coordenada){
